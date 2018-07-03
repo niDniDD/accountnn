@@ -7,6 +7,16 @@ import { NavController } from 'ionic-angular';
 })
 export class AboutPage {
 
+  
+  data = {
+    receipts: '',
+    howmuch: '',
+  }
+
+  logForm() {
+    console.log(this.data)
+  }
+
   constructor(public navCtrl: NavController) {
 
   }
