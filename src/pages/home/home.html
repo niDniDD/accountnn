@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>รายรับ</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <p>เขียนรายการรับเงิน</p>
+  <ion-list>
+    <ion-item>
+      <ion-label floating>รายการรับ</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label floating>ยอดเงินที่รับ</ion-label>
+      <ion-input type="text" [(ngModel)]="message"></ion-input>
+    </ion-item>
+  </ion-list>
+
+  <ion-row rol-12>
+    <ion-col>
+      <button ion-button block  color="danger">ยกเลิก</button>
+    </ion-col>
+
+    <ion-col>
+      <button ion-button block>บันทึก</button>
+    </ion-col>
+  </ion-row>
+
+</ion-content>
